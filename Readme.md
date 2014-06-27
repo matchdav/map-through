@@ -1,7 +1,17 @@
 
-# transform
+# map-through
 
   create a through stream and pass it a transform operation
+
+# why
+
+I think it is tidier than writing 
+    
+    var mystream = through(function write(data){ 
+      this.queue(doSomethingSyncToTheData(data));
+    });
+
+every time I just want to do a map operation.  most times I do not want anything special to happen on 'end', I just want a read/write stream to push my data through the pipe.
 
 ## Installation
 
@@ -12,8 +22,6 @@
   Install with [npm(1)](http://npmjs.org):
 
     $ npm install map-through
-
-    (transform was taken - sorry!)
 
 ## API
 
@@ -26,7 +34,9 @@ var through = require('through'),
     stream1 = through(),
     stream2 = transform(uppercase);
     stream1.write('beep');
-
+    stream2.on('data',function(data){
+      console.log(data) //'BEEP'
+    });
 
 
 ```
