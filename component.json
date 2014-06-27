@@ -4,7 +4,9 @@
   "description": "create a through stream and pass it a transform operation",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "matchdav/through": "v1.1.0"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
