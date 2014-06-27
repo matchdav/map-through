@@ -1,0 +1,29 @@
+{
+  "name": "map-through",
+  "version": "0.0.1",
+  "description": "return a through stream with an applied transformation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matchdav/transform.git"
+  },
+  "keywords": [
+    "stream",
+    "transform"
+  ],
+  "author": "mcd",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/matchdav/transform/issues"
+  },
+  "homepage": "https://github.com/matchdav/transform",
+  "dependencies": {
+    "through": "^2.3.4"
+  },
+  "devDependencies": {
+    "should": "^4.0.4"
+  }
+}
