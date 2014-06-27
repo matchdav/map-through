@@ -2,7 +2,7 @@
   "name": "map-through",
   "repo": "matchdav/map-through",
   "description": "create a through stream and pass it a transform operation",
-  "version": "0.0.1",
+  "version": "v0.0.2",
   "keywords": [],
   "dependencies": {},
   "development": {},
